@@ -1,0 +1,119 @@
+ main {
+     background-color: rgb(236, 233, 233);
+     padding: 4px;
+     border-radius: 10px;
+     color: #333;
+     grid-area: main;
+ }
+
+ 
+
+ h1,
+ h2 {
+     color: #333;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #profile-picture {
+     height: 100px;
+     width: 150px;
+     border: 1px solid #ccc;
+     padding: 2px;
+     border-radius: 5px;
+     max-width: 100%;
+ }
+.aside{
+    background-color: #f9f9f9; /* Optional: Add a background color for better visibility */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    align-self: start; /* Aligns the aside content to the top */
+    justify-self: end; /* Ensures the aside content is aligned to the right */
+    grid-area: aside;
+}
+ .rdiv {
+     border: inset 1px;
+     padding: 10px;
+     margin-bottom: 3px;
+
+ }
+
+
+ .title {
+     font-weight: bold;
+     color: #333;
+ }
+
+ .footer {
+     text-align: center;
+     font-size: 12px;
+     color: #666;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(201, 201, 241);
+     grid-area: footer;
+ }
+
+ #menu li {
+     display: inline;
+     padding: 8px;
+     background-color: rgb(118, 116, 116);
+
+ }
+
+ #menu li a {
+     color: #e9e1e1 !important;
+     text-decoration: none;
+ }
+
+ #menu li.active {
+     background-color: darkslategray;
+ }
+
+ header {
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     grid-area: header;
+ }
+
+ header #profile-picture {
+     order: 1;
+     flex-shrink: 0;
+ }
+
+ header #siteName {
+     order: 2;
+     font-size: 24px;
+     font-weight: bold;
+     color: #333;
+     margin-top: 30px;
+
+ }
+
+ header #menu {
+     order: 3;
+     margin-left: auto;
+
+ }
+ 
+
+ #menu {
+     float: right;
+     order: 3;
+ }
+
+ .container {
+     display: grid;
+     grid-template-areas:
+         "header header"
+         "main aside"
+         "footer footer";
+         grid-template-columns: auto 200px;
+         grid-gap: 10px;
+ }
+
+ #formInfo {
+     font-size:14px ;
+     font-style: italic ;
+ }
